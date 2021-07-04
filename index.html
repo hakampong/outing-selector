@@ -14,11 +14,13 @@
         <div class="container">
             <h1>Outing Selector</h1>
             <p>Hello! I am here to help you select a place for an outing.</p>
-
+            <hr>
             <p>What is your name?</p>
-            <input type="text" id="name"> <button onClick="yourName()">Submit</button>
+            <input type="text" id="name"> <button id="showQuestions" onClick="yourName()">Submit</button>
             <p id="displayName"></p>
-
+            <hr>
+            
+            <div id="questions">
             <p>What are you feeling?</p>
             <select name="feeling" id="feeling">
                 <option value="Hungry">Hungry</option>
@@ -27,6 +29,7 @@
                 <option value="Adventurous">Adventurous</option>
             </select>
             <button onClick="yourFeeling()">Submit</button>
+            </div>
         </div>
     </section>
     <script src="index.js"></script>
