@@ -14,6 +14,7 @@ function yourFeeling() {
     var lazyQuestions = document.getElementById("lazyQuestions");
     var adventurousQuestions = document.getElementById("adventurousQuestions");
     var touristyQuestions = document.getElementById("touristyQuestions");
+
     switch(x){
         case "Hungry":
             sportyQuestions.style.display = "none";
@@ -35,21 +36,41 @@ function yourFeeling() {
             adventurousQuestions.style.display = "none";
             touristyQuestions.style.display = "none";
             lazyQuestions.style.display = "block";
+            break;
         case "Adventurous":
             hungryQuestions.style.display = "none";
             sportyQuestions.style.display = "none";
-            adventurousQuestions.style.display = "block";
             touristyQuestions.style.display = "none";
             lazyQuestions.style.display = "none";
+            adventurousQuestions.style.display = "block";
+            break;
         case "Touristy":
             hungryQuestions.style.display = "none";
             sportyQuestions.style.display = "none";
             adventurousQuestions.style.display = "none";
-            touristyQuestions.style.display = "block";
             lazyQuestions.style.display = "none";
+            touristyQuestions.style.display = "block";
+            break;
+
 
     }
 
+function hungry(){
 
+}
 
+function sporty(){
+    
+}
+
+function lazy(){
+    
+}
+
+function adventurous(){
+    
+}
+
+function touristy(){
+    
 }
