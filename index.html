@@ -15,21 +15,102 @@
             <h1>Outing Selector</h1>
             <p>Hello! I am here to help you select a place for an outing.</p>
             <hr>
+            <!-- Name -->
             <p>What is your name?</p>
-            <input type="text" id="name"> <button id="showQuestions" onClick="yourName()">Submit</button>
-            <p id="displayName"></p>
-            <hr>
-            
+            <input type="text" id="name"> <button id="showQuestions" onclick="yourName()">Submit</button>
+            <p id="displayName">.</p>
+
+            <!-- Questions -->
             <div id="questions">
-            <p>What are you feeling?</p>
-            <select name="feeling" id="feeling">
-                <option value="Hungry">Hungry</option>
-                <option value="Sporty">Sporty</option>
-                <option value="Lazy">Lazy</option>
-                <option value="Adventurous">Adventurous</option>
-            </select>
-            <button onClick="yourFeeling()">Submit</button>
+                <hr>
+                <p>What are you feeling?</p>
+                <select name="feeling" id="feeling">
+                    <option value="Hungry">Hungry</option>
+                    <option value="Sporty">Sporty</option>
+                    <option value="Lazy">Lazy</option>
+                    <option value="Adventurous">Adventurous</option>
+                    <option value="Touristy">Touristy</option>
+                </select>
+                <button onClick="yourFeeling()">Submit</button>
             </div>
+            </br>
+            <!-- Questions for Hungry -->
+            <div id="hungryQuestions">
+                <hr>
+                <!-- Craving Question -->
+                <p>What are you craving?</p>
+                <select name="craving" id="craving">
+                    <option value="Western">Western</option>
+                    <option value="Fast Food">Fast Food</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Korean">Korean</option>
+                </select>
+
+                <!-- Broke Question -->
+                <p>Are you broke?</p>
+                <select name="broke" id="broke">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                </br></br>
+                <button id="hungrySubmit">Submit</button>
+            </div>
+
+            <!-- Questions for Sporty -->
+            <div id="sportyQuestions">
+                <hr>
+                <!-- Sport Question -->
+                <p>What sport do you feel like doing?</p>
+                <select name="sport" id="sport">
+                    <option value="Cycling">Cycling</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Skating">Skating</option>
+                    <option value="Frisbee">Frisbee</option>
+                    <option value="Kayaking">Kayaking</option>
+                    <option value="Kite Flying">Kite Flying</option>
+                    <option value="Idk">I don't know</option>
+                </select>
+                <button id="sportySubmit">Submit</button>
+            </div>
+
+            <!-- Questions for Lazy -->
+            <div id="lazyQuestions">
+                <hr>
+                <!-- Lazy Question -->
+                <p>Are you too lazy to prepare stuff?</p>
+                <select name="lazy" id="lazy">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <button id="lazySubmit">Submit</button>
+            </div>
+
+            <!-- Questions for Adventurous -->
+            <div id="adventurousQuestions">
+                <hr>
+                <!-- Adventure Question -->
+                <p>What acitvity do you feel like doing?</p>
+                <select name="adventure" id="adventure">
+                    <option value="Hiking">Hiking</option>
+                    <option value="Camping">Camping</option>
+                    <option value="Cooking">Cooking</option>
+                </select>
+                <button id="adventureSubmit">Submit</button>
+            </div>
+
+            <!-- Questions for Touristy -->
+            <div id="touristyQuestions">
+                <hr>
+                <!-- Touristy Question -->
+                <p>Are you broke?</p>
+                <select name="tourist" id="tourist">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <button id="touristySubmit">Submit</button>
+            </div>
+
+
         </div>
     </section>
     <script src="index.js"></script>
